@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Ttracking App</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" integrity="sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="map"></div>
+
+
+    <button id="simulate-btn" 
+    style="
+        position:absolute;
+        bottom:20px;
+        left:20px;
+        z-index:10000;
+        padding:10px 14px;
+        background:black;
+        color:white;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:14px;
+    "
+>
+Simulate Other User
+</button>
+
+
+<button id="stop-sim-btn" 
+    style="
+        position:absolute;
+        bottom:70px;
+        left:20px;
+        z-index:10000;
+        padding:10px 14px;
+        background:red;
+        color:white;
+        border:none;
+        border-radius:6px;
+        cursor:pointer;
+        font-size:14px;
+    "
+>
+Stop Simulation
+</button>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet-src.min.js" integrity="sha512-3/WyQrhTdqSVmSifQS62akgtNBhZha2lS44TnoN9Jk3J01FvsKK4suVmz6t5FtccGb5iJw58GoFhBjPE5EPc8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+
+    
+
+</body>
+</html>
